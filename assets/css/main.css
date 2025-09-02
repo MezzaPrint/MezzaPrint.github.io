@@ -407,6 +407,9 @@ body{
 .about .page-bgc{
 	padding-bottom: 0;
 }
+.calc-header .intro{
+	background-image: url(../images/calc-header.jpg);
+}
 
 
 

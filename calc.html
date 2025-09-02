@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>MezzaPrint - Diseños e Impresiones 3D</title>
+
+        <!-- CSS -->
+
+        <!-- google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- files -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
+        <link href="assets/css/ionicons.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+    <!-- Site Header -->
+        <div class="site-header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-3 text-right">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-robot" type="button">Search</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Header -->
+
+        <section id="header" class="main-header calc-header inner-header">
+            <div class="container">
+
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav-bar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="site-nav-bar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="about.html">Nosotros</a></li>
+                                <li><a href="shop.html">Tienda</a></li>
+                                <li><a href="faq.html">Preguntas</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                
+                <div class="intro row">
+                    <div class="overlay"></div>
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="active">Calculadora</li>
+                        </ol>
+                    </div>
+                </div> <!-- /.intro.row -->
+            </div> <!-- /.container -->
+            <div class="nutral"></div>
+        </section> <!-- /#header -->
+<body>
+    <div class="container mt-2">
+        <h2 class="text-center panel-title">Calculadora de Impresión 3D</h2>
+        <form id="calcForm">
+            <div class="row">
+                <!-- Pieza -->
+                <div class="col-md-4">
+                    <div class="panel">
+                        <h4 class="panel-title">Pieza</h4>
+                        <div class="form-group">
+                            <label>Tiempo de impresión:</label>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="number" min="0" class="form-control" id="horas" placeholder="Horas" value="0">
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="number" min="0" max="59" class="form-control" id="minutos" placeholder="Minutos" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Gramos de filamento:</label>
+                            <input type="number" min="0" class="form-control" id="gramos" value="95">
+                        </div>
+                        <div class="form-group">
+                            <label>INSUMOS (ARS $):</label>
+                            <input type="number" min="0" class="form-control" id="insumos" value="0">
+                        </div>
+                    </div>
+                </div>
+                <!-- Gastos Fijos -->
+                <div class="col-md-4">
+                    <div class="panel">
+                        <h4 class="panel-title">Gastos Fijos</h4>
+                        <div class="form-group">
+                            <label>Precio KG (ARS $):</label>
+                            <input type="number" min="0" class="form-control" id="precioKg" value="15000">
+                        </div>
+                        <div class="form-group">
+                            <label>Precio Kwh (ARS $):</label>
+                            <input type="number" min="0" class="form-control" id="precioKwh" value="140">
+                        </div>
+                        <div class="form-group">
+                            <label>Consumo real por hora (W):</label>
+                            <input type="number" min="0" class="form-control" id="consumoHora" value="120">
+                        </div>
+                        <div class="form-group">
+                            <label>Desgaste máquina (horas):</label>
+                            <input type="number" min="0" class="form-control" id="desgasteHoras" value="4320">
+                        </div>
+                        <div class="form-group">
+                            <label>Precio Repuestos (ARS $):</label>
+                            <input type="number" min="0" class="form-control" id="precioRepuestos" value="150000">
+                        </div>
+                        <div class="form-group">
+                            <label>% Margen de Error:</label>
+                            <input type="number" min="0" class="form-control" id="margenError" value="30">
+                        </div>
+                    </div>
+                </div>
+                <!-- Ganancia -->
+                <div class="col-md-4">
+                    <div class="panel">
+                        <h4 class="panel-title">Ganancia</h4>
+                        <div class="form-group">
+                            <label>Margen de ganancia (multiplicador):</label>
+                            <input type="number" min="1" class="form-control" id="ganancia" value="5">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-danger">Referencias:</label>
+                            <div style="color:#ff5c5c;">
+                                Precio Minorista → 4<br>
+                                Precio Mayorista → 3<br>
+                                Precio Llaveros → 5
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Moneda:</label>
+                            <select class="form-control" id="moneda">
+                                <option value="ARS">ARS</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                            <div class="currency mt-2">
+                                <span>USD: <input type="number" id="usdRate" value="1000" style="width:80px;"> </span>
+                                <span>EUR: <input type="number" id="eurRate" value="1100" style="width:80px;"> </span>
+                                <span class="help-block">*Cotización manual</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botón calcular -->
+            <div class="row">
+                <div class="col-md-12 text-center mb-2">
+                    <button type="button" class="btn btn-calc btn-lg" onclick="calcular()">Calcular</button>
+                </div>
+            </div>
+        </form>
+        <!-- Resultados -->
+        <div class="panel" id="resultados" style="display:none;">
+            <h4 class="panel-title">Resultados</h4>
+            <div>
+                <div><span class="result-label">Precio Material:</span> <span class="result-value" id="rMaterial"></span></div>
+                <div><span class="result-label">Precio Luz:</span> <span class="result-value" id="rLuz"></span></div>
+                <div><span class="result-label">Desgaste Máquina:</span> <span class="result-value" id="rDesgaste"></span></div>
+                <div><span class="result-label">Margen de Error :</span> <span class="result-value" id="rError"></span></div>
+                <div><span class="result-label">INSUMOS:</span> <span class="result-value" id="rInsumos"></span></div>
+                <div><span class="result-label">Subtotal sin insumos:</span> <span class="result-value" id="rSubtotal"></span></div>
+                <div class="result-total mt-2"><span>Total sin insumos:</span> <span class="result-value" id="rTotalSinInsumos"></span></div>
+                <div class="result-total"><span>TOTAL A COBRAR:</span> <span class="result-value" id="rTotalCobrar"></span></div>
+                <div class="result-ml mt-2"><span>PRECIO MERCADOLIBRE :</span> <span class="result-value" id="rML"></span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calcular() {
+            // Pieza
+            const horas = parseFloat(document.getElementById('horas').value) || 0;
+            const minutos = parseFloat(document.getElementById('minutos').value) || 0;
+            const gramos = parseFloat(document.getElementById('gramos').value) || 0;
+            const insumos = parseFloat(document.getElementById('insumos').value) || 0;
+            // Gastos Fijos
+            const precioKg = parseFloat(document.getElementById('precioKg').value) || 0;
+            const precioKwh = parseFloat(document.getElementById('precioKwh').value) || 0;
+            const consumoHora = parseFloat(document.getElementById('consumoHora').value) || 0;
+            const desgasteHoras = parseFloat(document.getElementById('desgasteHoras').value) || 1;
+            const precioRepuestos = parseFloat(document.getElementById('precioRepuestos').value) || 0;
+            const margenError = parseFloat(document.getElementById('margenError').value) || 0;
+            // Ganancia
+            const ganancia = parseFloat(document.getElementById('ganancia').value) || 1;
+            // Moneda
+            const moneda = document.getElementById('moneda').value;
+            const usdRate = parseFloat(document.getElementById('usdRate').value) || 1;
+            const eurRate = parseFloat(document.getElementById('eurRate').value) || 1;
+
+            // Cálculos
+            const tiempoHoras = horas + (minutos / 60);
+
+            // Precio Material
+            const precioMaterial = (gramos / 1000) * precioKg;
+
+            // Precio Luz
+            const precioLuz = (consumoHora / 1000) * precioKwh * tiempoHoras;
+
+            // Desgaste Máquina
+            const desgasteMaquina = (tiempoHoras / desgasteHoras) * precioRepuestos;
+
+            // Margen de Error
+            const margenDeError = ((precioMaterial + precioLuz + desgasteMaquina) * margenError) / 100;
+
+            // Subtotal sin insumos
+            const subtotalSinInsumos = precioMaterial + precioLuz + desgasteMaquina + margenDeError;
+
+            // Total sin insumos (con ganancia)
+            const totalSinInsumos = subtotalSinInsumos * ganancia;
+
+            // Total a cobrar (con insumos)
+            const totalCobrar = totalSinInsumos + insumos;
+
+            // Precio MercadoLibre (44.44% comisión)
+            const precioML = totalCobrar / 0.555555;
+
+            // Conversión de moneda
+            let divisor = 1;
+            if (moneda === "USD") divisor = usdRate;
+            if (moneda === "EUR") divisor = eurRate;
+
+            // Mostrar resultados
+            document.getElementById('rMaterial').innerText = formatCurrency(precioMaterial / divisor, moneda);
+            document.getElementById('rLuz').innerText = formatCurrency(precioLuz / divisor, moneda);
+            document.getElementById('rDesgaste').innerText = formatCurrency(desgasteMaquina / divisor, moneda);
+            document.getElementById('rError').innerText = formatCurrency(margenDeError / divisor, moneda);
+            document.getElementById('rInsumos').innerText = formatCurrency(insumos / divisor, moneda);
+            document.getElementById('rSubtotal').innerText = formatCurrency(subtotalSinInsumos / divisor, moneda);
+            document.getElementById('rTotalSinInsumos').innerText = formatCurrency(totalSinInsumos / divisor, moneda);
+            document.getElementById('rTotalCobrar').innerText = formatCurrency(totalCobrar / divisor, moneda);
+            document.getElementById('rML').innerText = formatCurrency(precioML / divisor, moneda);
+
+            document.getElementById('resultados').style.display = 'block';
+        }
+
+        function formatCurrency(value, moneda) {
+            let symbol = '';
+            if (moneda === "ARS") symbol = "ARS $ ";
+            if (moneda === "USD") symbol = "USD $ ";
+            if (moneda === "EUR") symbol = "EUR € ";
+            return symbol + value.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        }
+    </script>
+</body>
+</html>
